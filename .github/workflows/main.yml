@@ -18,7 +18,8 @@ jobs:
           - aarch64_generic
           - x86_64
         sdk:
-          - openwrt-21.02
+          - openwrt-21.02.7
+          - openwrt-23.05.1
 
     steps:
       - uses: actions/checkout@v4
@@ -26,7 +27,7 @@ jobs:
           fetch-depth: 0
 
       - name: Building packages
-        uses: SunHHB/gh-action-sdk@go1.21
+        uses: SunHHB/gh-action-sdk@go1.22
         env:
           ARCH: ${{ matrix.arch }}-${{ matrix.sdk }}
           FEEDNAME: packages_ci
