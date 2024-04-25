@@ -25,7 +25,7 @@ jobs:
           fetch-depth: 0
 
       - name: Building packages
-        uses: SunHHB/gh-action-sdk@go1.22
+        uses: SunHHB/gh-action-sdk@go1.21
         env:
           ARCH: ${{ matrix.arch }}-${{ matrix.sdk }}
           FEEDNAME: packages_ci
