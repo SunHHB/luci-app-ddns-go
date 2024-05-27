@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-ddns-go
-PKG_VERSION:=git-24.058.23686-ca892a5
+PKG_VERSION:=git-24.100.44971-c6c0236
 PKG_RELEASE:=20240409
 
 LUCI_TITLE:=LuCI Support for Dynamic ddns-go Client
