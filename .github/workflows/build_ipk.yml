@@ -14,9 +14,6 @@ jobs:
       matrix:
         arch:
           - x86_64
-          - aarch64_cortex-a53
-          - aarch64_cortex-a72
-          - aarch64_generic     
         sdk:
           - openwrt-23.05.4
 
@@ -26,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Building packages
-        uses: sbwml/openwrt-gh-action-sdk@go1.23
+        uses: SunHHB/gh-action-sdk@go1.22
         env:
           ARCH: ${{ matrix.arch }}-${{ matrix.sdk }}
           FEEDNAME: packages_ci
