@@ -1,7 +1,7 @@
 ipv4:
   enable: true
   gettype: url
-  url: https://myip4.ipip.net, https://ddns.oray.com/checkip, https://ip.3322.net
+  url: https://ddns.oray.com/checkip, https://ip.3322.net
   netinterface: br-lan
   domains:
   - ""
