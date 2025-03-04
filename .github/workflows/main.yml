@@ -4,7 +4,9 @@ on:
   push:
     tags:
       - v6.**
-
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  
 jobs:
   build:
     name: Build ${{ matrix.arch }}-${{ matrix.sdk }}
